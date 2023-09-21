@@ -12,9 +12,9 @@ print(f'Исходный массив: {startarr}')
 minrange = int(input("Введите минимум диапазона (число от 1 до 100): "))
 maxrange = int(input("Введите максимум диапазона (число от 1 до 100): "))
 
-for el in startarr:
+for i, el in enumerate(startarr):
     if (el > minrange and el < maxrange):
-        result.append(el)
+        result.append(i)
 
-print(f'Результирующий массив: {result}')        
+print(f'Результирующий массив индексов: {result}')        
 
